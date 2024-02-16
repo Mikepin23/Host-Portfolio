@@ -15,7 +15,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/Portfolio-image-me.png");
+  background-image: url("images/Portfolio-image-me.png");
   min-height: 100%;
 }
 
@@ -28,13 +28,13 @@ h6 {
 }
 
 #mySidebar .fa-remove {
-  background-color: rgb(74, 81, 132) ;
+  background-color: rgb(74, 81, 132);
   color: white;
 }
 
 .w3-row-padding img {
   border-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .w3-half :hover {
