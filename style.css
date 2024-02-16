@@ -1,0 +1,46 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/Portfolio-image-me.png");
+  min-height: 100%;
+}
+
+#mySidebar {
+  background-color: rgb(74, 81, 132) !important;
+}
+
+#mySidebar .w3-bar-item:hover {
+  background-color: transparent !important;
+}
+
+#mySidebar .fa-remove {
+  background-color: rgb(74, 81, 132) ;
+  color: white;
+}
+
+.w3-row-padding img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.w3-half :hover {
+  opacity: 90%;
+}
+
+.nav .w3-bar-item {
+  color: white;
+}
