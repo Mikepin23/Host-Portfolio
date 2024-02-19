@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <title>Michael Pinsonneault | Junior Developer</title>
+  <title>Michael Pinsonneault | Full Stack Developer</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Luxurious+Roman&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans:wght@400;600&display=swap"
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat"
   />
   <link
     rel="stylesheet"
@@ -22,7 +24,7 @@
 
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
     <nav
-      class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+      class="w3-sidebar w3-animate-right w3-xxlarge"
       style="display: none; padding-top: 150px; right: 0; z-index: 2"
       id="mySidebar"
     >
@@ -30,33 +32,21 @@
         href="javascript:void(0)"
         onclick="closeNav()"
         class="w3-xxxlarge w3-display-topright"
-        style="padding: 0 12px"
+        style="padding: 0 12px; background: transparent"
       >
         <i class="fa fa-remove"></i>
       </a>
       <div class="w3-bar-block w3-center">
-        <a
-          href="#"
-          class="w3-bar-item w3-button"
-          onclick="closeNav()"
+        <a href="#" class="w3-bar-item w3-button" onclick="closeNav()"
           >Michael Pinsonneault</a
         >
-        <a
-          href="#portfolio"
-          class="w3-bar-item w3-button"
-          onclick="closeNav()"
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="closeNav()"
           >Portfolio</a
         >
-        <a
-          href="#about"
-          class="w3-bar-item w3-button"
-          onclick="closeNav()"
+        <a href="#about" class="w3-bar-item w3-button" onclick="closeNav()"
           >About Me</a
         >
-        <a
-          href="#contact"
-          class="w3-bar-item w3-button"
-          onclick="closeNav()"
+        <a href="#contact" class="w3-bar-item w3-button" onclick="closeNav()"
           >Contact</a
         >
       </div>
@@ -66,59 +56,163 @@
     <div class="w3-main w3-padding-large" style="margin-left: 40%">
       <!-- Menu icon to open sidebar -->
       <span
-        class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
-        style="width: auto; right: 0"
+        class="w3-button w3-top w3-xxlarge"
+        style="width: auto; right: 0; background-color: transparent"
         onclick="openNav()"
-        ><i class="fa fa-bars"></i
-      ></span>
+      >
+        <i class="fa fa-bars"></i>
+      </span>
 
       <!-- Header -->
       <header
         class="w3-container w3-center"
-        style="padding: 128px 16px"
+        style="padding: 128px 16px 30px"
         id="home"
       >
-        <h1 class="w3-jumbo"><b>Michael Pinsonneault</b></h1>
-        <h2>Junior Developer</h2>
-        <!-- <img
-          src="images\WIN_20230529_11_39_56_Pro.jpg"
-          class="w3-image w3-hide-large w3-hide-small w3-round"
-          style="display: block; width: 60%; margin: auto"
-        />
-        <img
-          src="images\WIN_20230529_11_39_56_Pro.jpg"
-          class="w3-image w3-hide-large w3-hide-medium w3-round"
-          width="1000"
-          height="1333"
-        /> -->
+        <h1 class="title w3-jumbo"><b>Michael Pinsonneault</b></h1>
+        <h2 class="title" style="font-style: italic; font-size: 40px">
+          Full Stack Developer
+        </h2>
       </header>
 
       <!-- Portfolio Section -->
-      <div class="w3-padding-32 w3-content" id="portfolio">
-        <h2 class="w3-text-grey">My Portfolio</h2>
+      <div
+        class="w3-content w3-justify w3-text-grey w3-padding-32"
+        id="portfolio"
+      >
+        <h2 class="w3-text-">Portfolio</h2>
         <hr class="w3-opacity" />
 
-      <!-- Grid for photos -->
-<div class="w3-row-padding" style="margin: 0 -8px">
-  <div class="w3-half">
-    <a href="#Theatres"><img src="images\Theatre-1.png" style="width: 100%" /></a>
-    <a href="#Connect4"><img src="images\Connect4-1.png" style="width: 100%" /></a>
-    <a href="#Toytower"><img src="images\Toytower-1.png" style="width: 100%" /></a>
-    <a href="#Travel@Ease"><img src="images\Travel@Ease-1.png" style="width: 100%" /></a>
-    <a href="#LMS"><img src="images\LMS-1.png" style="width: 100%" /></a>
-  </div>
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin: 0 -8px">
+          <div class="w3-half">
+            <a href="#Theatres"
+              ><img src="images\Theatre-1.png" style="width: 100%"
+            /></a>
+            <a href="#Connect4"
+              ><img src="images\Connect4-1.png" style="width: 100%"
+            /></a>
+            <a href="#Toytower"
+              ><img src="images\Toytower-1.png" style="width: 100%"
+            /></a>
+            <a href="#Travel@Ease"
+              ><img src="images\Travel@Ease-1.png" style="width: 100%"
+            /></a>
+            <a href="#LMS"
+              ><img src="images\LMS-1.png" style="width: 100%"
+            /></a>
+          </div>
 
-  <div class="w3-half">
-    <a href="#Theatres"><img src="images\Theatre-2.png" style="width: 100%" /></a>
-    <a href="#Connect4"><img src="images\Connect4-2.png" style="width: 100%" /></a>
-    <a href="#Toytower"><img src="images\Toytower-2.png" style="width: 100%" /></a>
-    <a href="#Travel@Ease"><img src="images\Travel@Ease-2.png" style="width: 100%" /></a>
-    <a href="#LMS"><img src="images\LMS-2.png" style="width: 100%" /></a>
-  </div>
-</div>
-<!-- End photo grid -->
+          <div class="w3-half">
+            <a href="#Theatres"
+              ><img src="images\Theatre-2.png" style="width: 100%"
+            /></a>
+            <a href="#Connect4"
+              ><img src="images\Connect4-2.png" style="width: 100%"
+            /></a>
+            <a href="#Toytower"
+              ><img src="images\Toytower-2.png" style="width: 100%"
+            /></a>
+            <a href="#Travel@Ease"
+              ><img src="images\Travel@Ease-2.png" style="width: 100%"
+            /></a>
+            <a href="#LMS"
+              ><img src="images\LMS-2.png" style="width: 100%"
+            /></a>
+          </div>
+        </div>
+        <!-- End photo grid -->
 
         <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Project Descriptions Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32">
+        <h2>Project Descriptions</h2>
+        <hr class="w3-opacity" />
+        <div id="Travel@Ease">
+          <h3>Travel@Ease</h3>
+          <p>
+            Travel@Ease is an online platform for booking tours applying the
+            likes of React and Node.js. Users can register and login where
+            authentication is then applied, giving the user access to either the
+            administrative panel or their user profile.
+          </p>
+          <p>
+            Administrators possess the ability to create, update, and remove
+            tours listed on the website.
+          </p>
+          <p>
+            Users can effortlessly navigate through their profile, where they
+            have the freedom to update personal information, browse past
+            bookings, leave reviews and rate their past experiences.
+          </p>
+        </div>
+        <div id="Toytower">
+          <h3>Toytower</h3>
+          <p>
+            Toytower is an engaging e-commerce platform dedicated to offering a
+            diverse range of toys catering to various age groups. Built using
+            PHP and leveraging the Fat-Free Framework, it stands as an early
+            project and first use into the MVC architecture.
+          </p>
+          <p>
+            The platform boasts an array of playful and interactive features,
+            with each product card showcasing quirky and amusing descriptions.
+            Navigating through Toytower is not only convenient but also
+            enjoyable, offering users a delightful shopping experience.
+          </p>
+        </div>
+        <div id="Connect4">
+          <h3>Connect4</h3>
+          <p>
+            Some text about me. Some text about me. I am lorem ipsum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+        <div id="LMS">
+          <h3>Library Management system</h3>
+          <p>
+            Some text about me. Some text about me. I am lorem ipsum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+        <div id="Theatres">
+          <h3>Theatres</h3>
+          <p>
+            Some text about me. Some text about me. I am lorem ipsum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+
+        <!-- End About Section -->
       </div>
 
       <!-- About Section -->
@@ -126,101 +220,51 @@
         <h2>About Me</h2>
         <hr class="w3-opacity" />
         <p>
-          Some text about me. Some text about me. I am lorem ipsum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          I'm Michael Pinsonneault, a passionate Full Stack Developer student
+          currently enrolled at John Abbott College in Montreal. The past year
+          at John Abbott College has been a great experience for me. The
+          college's hands-on practical approach has significantly enhanced my
+          skills in the field of web development. As the end of the program
+          approaches in late April, I find myself reflecting on this bittersweet
+          milestone and eagerly seeking an internship opportunity to further
+          apply and refine my newfound passion.
         </p>
-
-        <!-- End About Section -->
-      </div>
-
-      <!-- Project Descriptions Section -->
-      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-        <h2>Project Descriptions</h2>
-        <hr class="w3-opacity" />
-        <div id="Travel@Ease">
-        <h3>Travel@Ease</h3>
         <p>
-          Some text about me. Some text about me. I am lorem ipsum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          I thrive in environments that foster creativity, collaboration, and
+          growth, and I am excited about the prospect of joining a dynamic team
+          where I can contribute my unique perspectives and skills while also
+          learning from others.
         </p>
-      </div>
-      <div id="Toytower">
-        <h3>Toytower</h3>
         <p>
-          Some text about me. Some text about me. I am lorem ipsum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          I possess proficiency in a range of programming languages, including
+          Java, JavaScript, PHP, C#, and SQL. Additionally, I boast hands-on
+          experience with Spring, React, and Node.js. Also to add, I have used
+          agile methodologies, particularly in the context of scrum practices.
+          Moreover, I am proficient in utilizing project management tools like
+          Trello, ensuring seamless collaboration and organization within
+          development teams.
         </p>
-      </div>
-      <div id="Connect4">
-        <h3>Connect4</h3>
         <p>
-          Some text about me. Some text about me. I am lorem ipsum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          I believe that the journey of a developer is not just about writing
+          code, but also about problem-solving, innovation, and making a
+          positive impact on the world. As I continue to evolve and grow in my
+          career, I am excited about the opportunities that lie ahead and the
+          chance to contribute meaningfully to the ever-evolving landscape of
+          technology.
         </p>
-      </div>
-      <div id="LMS">
-        <h3>Library Management system</h3>
         <p>
-          Some text about me. Some text about me. I am lorem ipsum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Outside of coding, I relish spending quality time with friends and
+          family, engaging in activities that foster connection and enjoyment.
+          Whether it's gathering for board games or venturing into the great
+          outdoors for activities like hiking or fishing. I find fulfillment in
+          creating lasting memories and embracing life's simple pleasures.
         </p>
-      </div>
-      <div id="Theatres">
-        <h3>Theatres</h3>
         <p>
-          Some text about me. Some text about me. I am lorem ipsum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Thank you for taking the time to visit my page and getting to know a
+          little bit about me. I'm excited about connecting with like-minded
+          individuals, exploring exciting opportunities, and embracing new
+          experiences as a future developer.
         </p>
-      </div>
-       
 
         <!-- End About Section -->
       </div>
@@ -228,12 +272,9 @@
       <!-- Footer -->
       <footer
         id="contact"
-        class="w3-container w3-padding-64 w3-light-grey w3-opacity w3-xlarge"
+        class="w3-container w3-padding-64 w3-grey w3-opacity w3-xlarge"
       >
-        <div
-          class="w3-padding-32 w3-content w3-text-grey"
-          style="margin-left: 15%"
-        >
+        <div class="w3-padding-32 w3-content" style="margin-left: 15%">
           <h2>Contact Information</h2>
           <hr class="w3-opacity" />
 

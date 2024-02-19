@@ -1,12 +1,20 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
+* {
+  font-family: "Playfair Display", serif;
 }
+
+p {
+  font-size: 20px;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background-image: url("images/Ocean.avif");
+  opacity: 0.5;
+}
+
 .w3-row-padding img {
   margin-bottom: 12px;
 }
@@ -41,6 +49,10 @@ h6 {
   opacity: 90%;
 }
 
-.nav .w3-bar-item {
+#mySidebar .w3-bar-item {
   color: white;
+}
+
+.title {
+  color: rgb(83, 82, 82);
 }
